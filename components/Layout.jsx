@@ -1,9 +1,24 @@
 import React from 'react'
+import Head from 'next/head'
 
-function Layout() {
+import Navbar from './Navbar'
+import Footer from './Footer'
+
+function Layout({ children }) {
   return (
-    <div>
-      layout
+    <div className="layout">
+      <Head>
+        <title>Simona's Store</title>
+      </Head>
+      <header>
+        <Navbar />
+      </header>
+      <main className="main-container">
+        {children}
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
