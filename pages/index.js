@@ -13,10 +13,10 @@ function Home({ products, bannerData }) {
         <p>Description</p>
       </div>
       <div className="products-container">
-        {products?.map(x => x.name)}
+        {products?.map(product => <Product key={product._id} product={product} />)}
       </div>
 
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData}/>
     </>
   )
 }
