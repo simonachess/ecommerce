@@ -316,9 +316,13 @@ span.text-red {
   padding: 20px;
 }
 .product .cart-product-image{
-  width:180px ;
+  width: 180px ;
   height: 150px;
   background-color: #ebebeb;
+  object-fit: contain;
+}
+.item-desc{
+  width: 100%;
 }
 .item-desc .flex{
   display: flex;

@@ -60,7 +60,7 @@ function Cart() {
 				<div className="product-container">
 					{cartItems.length >= 1 && cartItems.map((item) => (
 						<div className="product" key={item._id}>
-							<div >
+							<div>
 								<img src={urlFor(item?.image[0])} className="cart-product-image" />
 							</div>
 							<div className="item-desc">
